@@ -13,3 +13,15 @@ body{
 .top{
 	background-color: #f4f4f4;
 }
+.content{
+    height: 55px;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.content img{
+    width: auto; 
+    height: 50px;
+}
