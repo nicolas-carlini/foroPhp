@@ -1,0 +1,15 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Raleway',sans-serif;
+}
+.m{
+	width: 100%;
+	display: block;
+    float: left;
+}   
+.top{
+	background-color: #f4f4f4;
+}
