@@ -68,7 +68,7 @@ img{
     max-width: 100px;
     align-self: center;
 }
-.pwd,.email{
+.pwd,.pwd2,.email,.usuario{
     position: relative;
     box-sizing: border-box;
     height: auto;
@@ -76,14 +76,21 @@ img{
     font-size: 16px;
 }
 .pwd{
+    margin-top:5px;
+    border-radius: 5px;
+}
+.pwd2{
+    margin-top: 5px;
     margin-bottom: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px;
 }
 .email{
     margin-top: 15px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-radius: 5px;
+}
+.usuario{
+    margin-top: 5px;
+    border-radius: 5px;
 }
 .cop{
     color: #6c757d!important;
