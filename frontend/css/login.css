@@ -1,3 +1,4 @@
+/*hay que comprar masa para pizza con queso cremoso, 500 gramos*/
 *{
     box-sizing: border-box;
 }
@@ -40,6 +41,7 @@ form{
     background-color: rgb(255, 255, 255);
 }
 .btn {
+    margin-top: 15px;
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -75,13 +77,15 @@ img{
     padding: 10px;
     font-size: 16px;
 }
+input{
+    border-color: rgb(204, 204, 204);
+}
 .pwd{
     margin-top:5px;
     border-radius: 5px;
 }
 .pwd2{
     margin-top: 5px;
-    margin-bottom: 15px;
     border-radius: 5px;
 }
 .email{
