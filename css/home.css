@@ -27,3 +27,7 @@ body{
 	justify-content: space-between;
 	align-items: center;
 }
+.menuizquierda{
+	display: flex;
+	align-items: center;
+}
