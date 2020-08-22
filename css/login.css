@@ -1,0 +1,116 @@
+/*hay que comprar masa para pizza con queso cremoso, 500 gramos*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+html,body{
+    height: 100%;
+}
+main{
+    text-align: center!important;
+    display: block;
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 8%;
+}
+form{
+    text-align: center!important;
+    display: flex;
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    flex-direction: column;
+    border: 0.5px solid rgb(190, 190, 190);
+    border-radius: 9px;
+    background-color: rgb(255, 255, 255);
+}
+.btn {
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    cursor: pointer
+}
+img{
+    max-width: 100px;
+    align-self: center;
+}
+.pwd,.pwd2,.email,.usuario{
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+input{
+    border-color: rgb(204, 204, 204);
+}
+.pwd{
+    margin-top:5px;
+    border-radius: 5px;
+}
+.pwd2{
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.email{
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.usuario{
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.cop{
+    color: #6c757d!important;
+    margin: 15px;
+}
+.wlcm{
+    font-weight: 400!important;
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+.singre{
+    font-weight: 500!important;
+    font-size: .85rem;
+    line-height: 1.2;
+    margin-top: 6px;
+}
+a{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    margin: 1px;
+}
