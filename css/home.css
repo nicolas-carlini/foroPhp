@@ -4,13 +4,12 @@
 }
 body{
 	font-family: 'Raleway',sans-serif;
+	font-size: 14apx;
 }
 .all{
 	width: 100%;
     margin: 0;
     display: block;
-    float: left;
-    overflow: hidden;
 }
 .m{
 	width: 100%;
@@ -19,13 +18,38 @@ body{
 }
 .top{
 	background-color: #f4f4f4;
+	margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+.home2,.iz,.data2,.data3,.uwu,.publicarr,.botones,.espaciosparaquequedelindo{
+	padding-right: 15px;
+    padding-left: 15px;
+}
+h5{
+	font-size: 14px;
+	font-weight: 500;
+}
+a{
+	color: #337ab7;
+    text-decoration: none;
+}
+.boton{
+	background-color: #fff;
+	border-color: #ccc;
+	border: 1px solid transparent;
+}
+/* Header*/
+header{
+	height: 50px;
 }
 .content{
+	height: 50px;
 	width: 90%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 }
 .menuizquierda{
 	display: flex;
@@ -35,3 +59,78 @@ body{
 	display: flex;
 	align-items: center;
 }
+/* Header*/
+
+.home{
+	margin-top: 15px;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+	margin-left: auto;
+}
+/* Barra izquierda */
+.bar-iz{
+	padding-right: 15px;
+    padding-left: 15px;
+}
+.data{
+	padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+}
+.imagen{
+	float: left;
+}
+.editinfo{
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+	border-radius: 3px;
+	color: #333;
+    background-color: #fff;
+    border-color: #ccc;	
+}
+/* Publicar Estado */
+.panel{
+	margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	border-color: #ddd;	
+}
+.panel-header{
+	background-color: #f5f5f5;
+	border-color: #ddd;
+	padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+}
+.panel-body{
+	padding: 15px;
+}
+.texto-public{
+	margin-bottom: 15px;
+	height: auto;
+}
+.textar{
+	height: auto;
+	display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.publicar{
+	color: #fff;
+    background-color: #337ab7;
+	border-color: #2e6da4;
+	width: 100%;
+}
+/* publicar Estado */
