@@ -1,0 +1,35 @@
+#cartelDeAviso {
+    visibility: hidden;
+    background-color:rgb(71, 71, 255);
+    color: White;   
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    min-height:40px;
+    position: absolute;
+    bottom:7px;
+    right: 7px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:7px;
+}
+
+.cartelDeAvisoON {
+    animation-duration: 5s;
+    animation-name: cartelAnimacion; 
+}
+
+.cartelDeAvisoOFF {
+    display: none;
+}
+
+  @keyframes cartelAnimacion {
+    from {
+      visibility: visible;
+        
+    }
+  
+    to {
+      
+    }
+  }
