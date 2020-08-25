@@ -2,11 +2,18 @@
 	margin: 0;
 	padding: 0;
 }
+
+html{
+	height:100%;
+}
+
 body{
 	font-family: 'Raleway',sans-serif;
 	font-size: 14apx;
+	height:100%;
 }
 .all{
+	height:100%;
 	width: 100%;
     margin: 0;
     display: block;
@@ -40,7 +47,7 @@ a{
 }
 /* Header*/
 header{
-	height: 50px;
+	height: 6%;
 }
 .content{
 	height: 50px;
@@ -62,9 +69,9 @@ header{
 /* Header*/
 
 .home{
+	width:100%;
+	height:94%;
 	margin-top: 15px;
-	padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
 	margin-left: auto;
 }
@@ -127,10 +134,37 @@ header{
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.publicar{
-	color: #fff;
-    background-color: #337ab7;
-	border-color: #2e6da4;
-	width: 100%;
-}
+
 /* publicar Estado */
+.botonPublicar{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 550;
+	color: rgb(255, 255, 255);
+    background-color: #337ab7;
+	border-color: #337ab7;
+	width: 35%;
+	border-radius:6px;
+	height: 28px;
+}
+.publicarr{
+	display:flex;
+	justify-content: flex-end;
+}
+
+.cajitas{
+	height:100%;
+	width:100%;
+	clear:both;
+	display:flex;
+	padding-top: 15px;
+	flex-direction:row;
+}
+ .uwu {
+	margin-left:150px;
+	width:30%;
+ }
+
+ .bar-iz {
+	margin-left:50px;
+	width:20%;
+ }
