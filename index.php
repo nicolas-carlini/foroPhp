@@ -21,7 +21,7 @@
             <button type="submit"class="btn"id="enviar">Ingresar</button>
             <h1 class="singre">¿No estas registrado? <a href="singup.html">Registrarse</a></h1>
             <h1 class="singre"><a href="repass.html">¿Perdiste tu cuenta?</a></h1>
-            <p class="cop">© 2020-2500</p>
+            <p class="cop">© 2020-2021</p>
         </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
