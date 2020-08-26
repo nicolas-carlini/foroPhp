@@ -1,6 +1,6 @@
 "use strict";
 window.onload = function () {
-  const url = "backforo.carlini.tech/api/signup.php";
+  const url = "https://backforo.carlini.tech/api/signup.php";
 
   const pwd = document.getElementById("pwd");
   const pwd2 = document.getElementById("pwd2");
