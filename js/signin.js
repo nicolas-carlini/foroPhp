@@ -1,6 +1,6 @@
 'use strict';
 
-const url = "http://35.225.64.241/api/signin.php";
+const url = "backforo.carlini.tech/api/signup.php";
 
 const pwd = document.getElementById("pwd");
 const email = document.getElementById("email");
