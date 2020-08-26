@@ -24,7 +24,7 @@ main{
     display: block;
     padding: 8%;
 }
-form{
+.form{
     text-align: center!important;
     display: flex;
     width: 100%;
