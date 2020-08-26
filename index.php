@@ -19,7 +19,7 @@
             <input type="password" name="pwd" id="pwd"class="pwd"placeholder="Contraseña" required>
 
             <button type="submit"class="btn"id="enviar">Ingresar</button>
-            <h1 class="singre">¿No estas registrado? <a href="singup.html">Registrarse</a></h1>
+            <h1 class="singre">¿No estas registrado? <a href="signup.html">Registrarse</a></h1>
             <h1 class="singre"><a href="repass.html">¿Perdiste tu cuenta?</a></h1>
             <p class="cop">© 2020-2500</p>
         </div>
