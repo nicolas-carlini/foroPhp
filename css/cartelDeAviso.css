@@ -12,6 +12,7 @@
     justify-content: center;
     align-items:center;
     border-radius:7px;
+    transition: 2s;
 }
 
 .cartelDeAvisoON {
@@ -19,17 +20,13 @@
     animation-name: cartelAnimacion; 
 }
 
-.cartelDeAvisoOFF {
-    display: none;
-}
-
-  @keyframes cartelAnimacion {
-    from {
-      visibility: visible;
-        
-    }
-  
-    to {
+@keyframes cartelAnimacion {
+  from {
+    visibility: visible;
       
-    }
   }
+
+  to {
+    visibility: hidden;
+  }
+}
