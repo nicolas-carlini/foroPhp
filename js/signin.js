@@ -13,8 +13,7 @@ window.onload = function () {
 
     var requestOptions = {
       headers: {
-        "Content-Type": "multipart/form-data",
-                    "Access-Control-Allow-Origin": "*"
+        "Content-Type": "multipart/form-data"
       },
     };
     console.log(formdata);

@@ -16,8 +16,9 @@ window.onload = function () {
       formdata.append("email", email.value);
 
       var requestOptions = {
-        headers: { "Content-Type": "multipart/form-data",
-        "Access-Control-Allow-Origin": "*" },
+        headers: {
+          "Content-Type": "multipart/form-data"
+        },
       };
 
       console.log(requestOptions);
