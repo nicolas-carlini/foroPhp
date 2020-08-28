@@ -11,7 +11,7 @@
     <main>
         <div class="form">
             
-            <img src="assets/logo1.png" alt="">
+        <img src="assets/logo1.png" class="logardo" alt="si no carga es porque es una bosta la página o tu internet uwu">
 
             <h1 class="wlcm"> Bienvenido </h1>
 
