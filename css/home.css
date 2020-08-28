@@ -13,6 +13,10 @@ body{
 	font-size: 14apx;
 	height:100%;
 }
+.logardo{
+	max-height: 50px;
+    align-self: center;
+}
 .all{
 	height:100%;
 	width: 100%;
@@ -29,9 +33,16 @@ body{
 	margin-bottom: 20px;
     border: 1px solid transparent;
 }
-.home2,.iz,.data2,.data3,.publicarr,.botones,.espaciosparaquequedelindo{
+.home2,.iz,.data2,.publicarr,.botones,.espaciosparaquequedelindo{
 	padding-right: 15px;
     padding-left: 15px;
+}
+.home{
+	width:100%;
+	height:94%;
+	margin-top: 15px;
+    margin-right: auto;
+	margin-left: auto;
 }
 h5{
 	font-size: 14px;
@@ -60,9 +71,10 @@ a{
 	flex-direction: column;
 }
 /* General */
+
 /* Header*/
 header{
-	height: 6%;
+	height: 10%;
 }
 .content{
 	height: 50px;
@@ -83,13 +95,6 @@ header{
 }
 /* Header*/
 
-.home{
-	width:100%;
-	height:94%;
-	margin-top: 15px;
-    margin-right: auto;
-	margin-left: auto;
-}
 /* Barra izquierda */
 .bar-iz {
 	margin-left:50px;
@@ -97,11 +102,15 @@ header{
     padding-left: 15px;
 }
 .data{
+	height: 44px;
 	padding: 19px;
     margin-bottom: 20px;
     background-color: #f5f5f5;
     border: 1px solid #e3e3e3;
     border-radius: 4px;
+}
+.data2{
+	padding: 5px;
 }
 .imagen{
 	float: left;
@@ -115,6 +124,7 @@ header{
     background-color: #fff;
     border-color: #ccc;	
 }
+
 /* Publicar Estado */
 .panel{
 	margin-bottom: 20px;
@@ -150,7 +160,6 @@ header{
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-/* publicar Estado */
 .botonPublicar{
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 550;
@@ -172,6 +181,7 @@ header{
 	height: 285px;
  }
  /* Publicar Estado*/
+
  /* Posteo */
  .posteo{
 	padding: 15px;

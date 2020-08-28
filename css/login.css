@@ -62,7 +62,7 @@ main{
     border-radius: .3rem;
     cursor: pointer
 }
-img{
+.logardo{
     max-width: 100px;
     align-self: center;
 }
