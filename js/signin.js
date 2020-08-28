@@ -16,7 +16,7 @@ window.onload = function () {
         "Content-Type": "multipart/form-data",
       },
     };
-
+    console.log(formdata);
     console.log(requestOptions);
 
     axios
