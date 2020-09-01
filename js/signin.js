@@ -7,6 +7,9 @@ window.onload = function () {
   const enviar = document.getElementById("enviar");
 
   enviar.onclick = () => {
+
+    newAviso('Enviando datos...');
+
     var formdata = new FormData();
     formdata.append("pwd", pwd.value);
     formdata.append("email", email.value);
@@ -24,20 +27,21 @@ window.onload = function () {
       .post(url, formdata, requestOptions)
       .then((Response) => {
         if (Response.data.error) {
-          console.error("algo ha fallado");
+          newAviso('Algo ha fallado, controle los datos e inténtelo de nuevo');
+          console.log("error",response.data);
         } else {
           if (Response.data.isLogged) {
-            console.log("se ha loggeado exitosamente!");
+            newAviso('Se ha loggeado exitosamente!');
+            console.log("todo bien",response.data);
           } else {
-            console.log(
-              "hubo un problema al logearse, intenetelo de nuevo",
-              Response.data
-            );
+            newAviso('Hubo un problema al logearse, inténtelo de nuevo');
+            console.log("error, no se logueó pero no tiro error",response.data);
           }
         }
       })
       .catch((e) => {
         console.error("Error", e);
+        newAviso('No conectó con el servidor');
       });
   };
 };
