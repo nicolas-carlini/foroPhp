@@ -17,8 +17,8 @@
 
             <h1 class="wlcm"> Bienvenido </h1>
 
-            <input type="email" name="email" id="email"class="email"placeholder="Email" required>
-            <input type="password" name="pwd" id="pwd"class="pwd"placeholder="Contraseña" required>
+            <input type="email" name="email" id="email"class="email"placeholder="Email" required="">
+            <input type="password" name="pwd" id="pwd"class="pwd"placeholder="Contraseña" required="">
             
 
             <button type="submit"class="btn"id="enviar">Ingresar</button>
