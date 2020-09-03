@@ -7,6 +7,7 @@ const email = document.getElementById("email");
 
 enviar.onclick = () => {
 
+    newAviso("Enviando datos...");
 
     var formdata = new FormData();
 
@@ -26,17 +27,17 @@ enviar.onclick = () => {
         .then(Response => {
             console.log(Response);
             if (Response.data.error) {
-                console.error("algo ha fallado");
+                newAviso("algo ha fallado");
             } else {
                 if (Response.data.changePassword) {
-                    console.log("se ha enviado un email para cambiar la contra!");
+                    newAviso("se ha enviado un email para cambiar la contra!");
                 } else {
-                    console.log("hubo un problema, intenetelo de nuevo");
+                    newAviso("hubo un problema, intenetelo de nuevo");
                 }
             }
         })
         .catch(e => {
-            console.error("Error", e)
+            newAviso("Error el servidor no responde", e)
         });
 
 

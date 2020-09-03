@@ -10,7 +10,7 @@ window.onload = function () {
 
   enviar.onclick = () => {
     if (email.value!==''&&pwd.value!=='') {
-      newAviso('Enviando datos...');
+      newAviso("Enviando datos...");
 
       var formdata = new FormData();
       formdata.append("pwd", pwd.value);

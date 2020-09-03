@@ -10,6 +10,7 @@ window.onload = function () {
 
     enviar.onclick = () => {
         if (pwd2.value === pwd3.value) {
+            newAviso("Enviando datos...");
             var formdata = new FormData();
 
 
@@ -31,22 +32,22 @@ window.onload = function () {
                 .post(url, formdata, requestOptions)
                 .then((Response) => {
                     if (Response.data.error) {
-                        console.error("algo ha fallado");
+                        newAviso("algo ha fallado");
                     } else {
                         if (Response.data.changePassword) {
-                            console.log("se ha cambiado exitosamente!");
+                            newAviso("se ha cambiado exitosamente!");
                         } else {
-                            console.log(
+                            newAviso(
                                 "hubo un problema al registrarse, intenetelo de nuevo"
                             );
                         }
                     }
                 })
                 .catch((e) => {
-                    console.error("Error, se cayo todo rey", e);
+                    newAviso("Error, el servidor no anda", e);
                 });
         } else {
-            console.log("la contraseñas no coinciden");
+            newAviso("la contraseñas no coinciden");
         }
     };
 };
