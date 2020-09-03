@@ -42,8 +42,8 @@ window.onload = function () {
           }
         })
         .catch((e) => {
-          console.error("Error", e);
-          newAviso('No conectó con el servidor');
+          console.error("Error no se detecta respuesta del servidor", e);
+          newAviso("Error no se detecta respuesta del servidor");
         });
     }
     else{

@@ -37,7 +37,8 @@ enviar.onclick = () => {
             }
         })
         .catch(e => {
-            newAviso("Error el servidor no responde", e)
+            console.error("Error no se detecta respuesta del servidor", e);
+          newAviso("Error no se detecta respuesta del servidor");
         });
 
 

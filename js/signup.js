@@ -39,7 +39,8 @@ window.onload = function () {
           }
         })
         .catch((e) => {
-          newAviso("Error no se detecta respuesta del servidor", e);
+          console.error("Error no se detecta respuesta del servidor", e);
+          newAviso("Error no se detecta respuesta del servidor");
         });
     } else {
       newAviso("la contraseñas no coinciden");
