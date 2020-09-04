@@ -16,14 +16,13 @@ window.onload = function () {
       formdata.append("pwd", pwd.value);
       formdata.append("email", email.value);
 
-      var requestOptions = {
-        headers: {
-          "Content-Type": "multipart/form-data",
-          "Access-Control-Allow-Origin": "*"
-        },
-      };
-      console.log(formdata);
-      console.log(requestOptions);
+    var requestOptions = {
+      headers: {
+        "Content-Type": "multipart/form-data"
+      },
+    };
+    console.log(formdata);
+    console.log(requestOptions);
 
       axios
         .post(url, formdata, requestOptions)
