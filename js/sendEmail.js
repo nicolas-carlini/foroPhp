@@ -28,7 +28,8 @@ enviar.onclick = () => {
                 newAviso("algo ha fallado");
             } else {
                 if (Response.data.changePassword) {
-                    newAviso("se ha enviado un email para cambiar la contra!");
+                    newAviso("se ha enviado un email para validar!");
+                    location.href="/repasswemail.html";
                 } else {
                     newAviso("hubo un problema, intenetelo de nuevo");
                 }
