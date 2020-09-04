@@ -1,6 +1,6 @@
 'use strict';
 
-const url = "http://35.225.64.241/api/sendEmail.php";
+const url = "https://backforo.carlini.tech/api/sendEmail.php";
 
 const email = document.getElementById("email");
 
