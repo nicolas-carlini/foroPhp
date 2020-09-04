@@ -13,12 +13,8 @@
     display:flex;
     justify-content: center;
     align-items:center;
-<<<<<<< HEAD
     border-radius:6px;
     transition: 2s;
-=======
-    border-radius:7px;
->>>>>>> e98b741ef2da73b5f1d85df154d0c478261eb2d1
 }
 
 .cartelDeAvisoON {

@@ -28,11 +28,7 @@
         </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
-<<<<<<< HEAD
     <script src="js/signin.js"></script>
     <script src="js/carteDeAviso.js"></script>
-=======
-    <script src="js/commands.js"></script>
->>>>>>> e98b741ef2da73b5f1d85df154d0c478261eb2d1
 </body>
 </html>
