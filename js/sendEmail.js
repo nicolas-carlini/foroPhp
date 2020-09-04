@@ -31,7 +31,8 @@ enviar.onclick = () => {
                     newAviso("se ha enviado un email para validar!");
                     location.href="/repasswemail.html";
                 } else {
-                    newAviso("hubo un problema, intenetelo de nuevo");
+                    newAviso("hubo un problema, intentelo de nuevo");
+                    console.log(Response.data);
                 }
             }
         })
