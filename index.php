@@ -23,7 +23,7 @@
 
             <button type="submit"class="btn"id="enviar">Ingresar</button>
             <h1 class="singre">¿No estas registrado? <a href="singup.html">Registrarse</a></h1>
-            <h1 class="singre"><a href="sendEmail.html">¿Queres validar tu cuenta?</a></h1>
+            <h1 class="singre"><a href="sendEmail.html">¿Perdiste tu cuenta?</a></h1>
             <p class="cop">© 2020-2021</p>
         </div>
     </main>
