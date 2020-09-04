@@ -29,14 +29,14 @@ window.onload = function () {
         .then((Response) => {
           if (Response.data.error) {
             newAviso('Algo ha fallado, controle los datos e inténtelo de nuevo');
-            console.log("error", response.data);
+            console.log("error", Response.data);
           } else {
             if (Response.data.isLogged) {
               newAviso('Se ha loggeado exitosamente!');
-              console.log("todo bien", response.data);
+              console.log("todo bien", Response.data);
             } else {
               newAviso('Hubo un problema al logearse, inténtelo de nuevo');
-              console.log("error, no se logueó pero no tiro error", response.data);
+              console.log("error, no se logueó pero no tiro error", Response.data);
             }
           }
         })
