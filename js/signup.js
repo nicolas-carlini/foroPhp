@@ -32,7 +32,7 @@ window.onload = function () {
           } else {
             if (Response.data.isRegistered) {
               newAviso("se ha registrado exitosamente!");
-              location.href="/validCode.html";
+              location.href="/index.php";
             } else {
               newAviso(
                 "hubo un problema al registrarse, intenetelo de nuevo"
