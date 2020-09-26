@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function () {
-    const url = "https://backforo.carlini.tech/api/repass.php";
+    const url = "https://backforo.carlini.tech/api/repassEmail.php";
 
     const pwd = document.getElementById("pwd");
     const pwd2 = document.getElementById("pwd2");
@@ -15,7 +15,7 @@ window.onload = function () {
             var formdata = new FormData();
 
 
-            formdata.append("code", code.value);
+            formdata.append("validCode", code.value);
             formdata.append("newPwd", pwd2.value);
             formdata.append("email", email.value);
 

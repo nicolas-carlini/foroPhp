@@ -31,7 +31,8 @@ body{
 .top{
 	background-color: #f4f4f4;
 	margin-bottom: 20px;
-    border: 1px solid transparent;
+	border: 1px solid transparent;
+	border-bottom: 1px solid rgb(202, 202, 202);
 }
 .home2,.iz,.data2,.publicarr,.botones,.espaciosparaquequedelindo{
 	padding-right: 15px;
