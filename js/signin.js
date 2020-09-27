@@ -1,6 +1,27 @@
 "use strict";
 window.onload = function () {
-  const url = "https://backforo.carlini.tech/api/signin.php";
+
+  (()=>{
+    const url = "https://backforo.carlini.tech/api/isLogged.php";
+    axios 
+    .post(url)
+    .then((Response) => {
+      if (Response.data.error) {
+        console.log("error", Response.data);
+      } else {
+        if (Response.data.isLogged) {
+          location.href="/home.html";
+          console.log("todo bien", Response.data);
+        } else {
+          console.log("error, no se logueó pero no tiro error", Response.data);
+        }
+      }
+    })
+    .catch((e) => {
+      console.error("Error no se detecta respuesta del servidor", e);
+    });
+  })();
+  
 
   const pwd = document.getElementById("pwd");
   const email = document.getElementById("email");
@@ -9,6 +30,7 @@ window.onload = function () {
 
 
   enviar.onclick = () => {
+    const url = "https://backforo.carlini.tech/api/signin.php";
     if (email.value!==''&&pwd.value!=='') {
       newAviso("Enviando datos...");
 
