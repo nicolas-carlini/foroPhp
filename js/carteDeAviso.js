@@ -12,8 +12,3 @@ async function newAviso(text){
     cartel.className = "";
 }
 
-(async ()=>{
-    await newAviso('pepe');
-    await sleep(50);
-    await newAviso('pepe2');
-})() 

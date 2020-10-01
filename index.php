@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/cartelDeAviso.css">
     <title>Document</title>
 </head>
 <body>
+<div id="cartelDeAviso"></div>
     <main>
         <div class="form">
             
@@ -15,16 +17,18 @@
 
             <h1 class="wlcm"> Bienvenido </h1>
 
-            <input type="email" name="email" id="email"class="email"placeholder="Email" required>
-            <input type="password" name="pwd" id="pwd"class="pwd"placeholder="Contraseña" required>
+            <input type="email" name="email" id="email"class="email"placeholder="Email" required="">
+            <input type="password" name="pwd" id="pwd"class="pwd"placeholder="Contraseña" required="">
+            
 
             <button type="submit"class="btn"id="enviar">Ingresar</button>
             <h1 class="singre">¿No estas registrado? <a href="singup.html">Registrarse</a></h1>
-            <h1 class="singre"><a href="repass.html">¿Perdiste tu cuenta?</a></h1>
+            <h1 class="singre"><a href="sendEmail.html">¿Perdiste tu cuenta?</a></h1>
             <p class="cop">© 2020-2021</p>
         </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
-    <script src="js/commands.js"></script>
+    <script src="js/signin.js"></script>
+    <script src="js/carteDeAviso.js"></script>
 </body>
 </html>

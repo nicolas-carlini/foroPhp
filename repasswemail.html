@@ -1,0 +1,34 @@
+<html>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/cartelDeAviso.css">
+    <title>Document</title>
+</header>
+<body>
+    <div id="cartelDeAviso"></div>
+    
+    <main>
+        <div class="form">
+            
+            <img src="assets/logo1.png" alt=""class="logardo">
+
+            <h1 class="wlcm"> Cambiar tu contraseña </h1>
+
+            <input type="email" name="email" id="email"class="email"placeholder="Email" required>
+            <input type="text" name="code" id="code"class="pwd"placeholder="codigo que te enviaron" required>
+            <input type="password" name="pwd2" id="pwd2"class="pwd"placeholder="Nueva contraseña" required>
+            <input type="password" name="pwd3" id="pwd3"class="pwd"placeholder="Confirma nueva contraseña" required>
+
+            
+            <button type="submit"class="btn"id="enviar">Cambiar</button>
+            <p class="cop">© 2020-2021</p>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+    <script src="js/repasswemail.js"></script>
+    <script src="js/carteDeAviso.js"></script>
+</body>
+</html>

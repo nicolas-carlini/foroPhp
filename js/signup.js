@@ -1,6 +1,6 @@
 "use strict";
 window.onload = function () {
-  const url = "backforo.carlini.tech/api/signup.php";
+  const url = "https://backforo.carlini.tech/api/signup.php";
 
   const pwd = document.getElementById("pwd");
   const pwd2 = document.getElementById("pwd2");
@@ -10,13 +10,16 @@ window.onload = function () {
 
   enviar.onclick = () => {
     if (pwd.value === pwd2.value) {
+      newAviso("Enviando datos...");
       var formdata = new FormData();
       formdata.append("pwd", pwd.value);
       formdata.append("name", usuario.value);
       formdata.append("email", email.value);
 
       var requestOptions = {
-        headers: { "Content-Type": "multipart/form-data" },
+        headers: {
+          "Content-Type": "multipart/form-data"
+        },
       };
 
       console.log(requestOptions);
@@ -25,22 +28,24 @@ window.onload = function () {
         .post(url, formdata, requestOptions)
         .then((Response) => {
           if (Response.data.error) {
-            console.error("algo ha fallado");
+            newAviso("algo ha fallado");
           } else {
             if (Response.data.isRegistered) {
-              console.log("se ha registrado exitosamente!");
+              newAviso("se ha registrado exitosamente!");
+              location.href="/index.php";
             } else {
-              console.log(
+              newAviso(
                 "hubo un problema al registrarse, intenetelo de nuevo"
               );
             }
           }
         })
         .catch((e) => {
-          console.error("Error", e);
+          console.error("Error no se detecta respuesta del servidor", e);
+          newAviso("Error no se detecta respuesta del servidor");
         });
     } else {
-      console.log("la contraseñas no coinciden");
+      newAviso("la contraseñas no coinciden");
     }
   };
 };
