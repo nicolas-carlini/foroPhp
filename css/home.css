@@ -202,6 +202,10 @@ header{
 	
 	padding: 15px;
 }
+.posteo-user{
+	display: flex;
+	justify-content: space-between;
+}
 
 .comentario{
 	display: flex;
