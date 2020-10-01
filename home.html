@@ -61,7 +61,7 @@
 							</div>
 						</div>
 					</div>		
-					<div>
+					<div id="mostrarPosts">
 						<div class="posteo">
 							<div class="posteo-user">
 								<h4>Nómbré de usuario</h4>
@@ -74,13 +74,26 @@
 							</div>
 						</div>
 						<div class="comentario">
+							<button class="botonComentarios" onclick="mostrarComents(createdBy)">mostrar comentarios</button>
+							<div class="coments" >
+								<div class="posteo-user">
+									<h4>Nómbré de usuario</h4>
+								</div>
+								<div class="posteo-body">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed.</p>
+								</div>
+							</div>
 							<input type="text" name="comentar" id="area" class="textcomen">
 							<input type="submit" class="botonComentar" value="Comentar" name="comentarioBoton">
 						</div>
 					</div>		
+					
 				</div>	
 			</div>
 		</div>
 	</div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+<script src="js/home.js"></script>
+<script src="js/carteDeAviso.js"></script>
 </html>
