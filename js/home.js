@@ -20,7 +20,7 @@ function mostrarPost() {
             } else {
                 uwuposteo= document.getElementsByClassName("uwu-posteo");
 
-                
+
                 
             }
         })
@@ -48,7 +48,7 @@ function makePost(createdBy, content, titulo, nombre){
     post+='</div>';
     post+='<div class="comentario">';
     post+='<button class="botonComentarios" onclick="mostrarComents('+createdBy+')">mostrar comentarios</button>';
-    post+='<input type="text" name="comentar" id="area" class="textcomen">';
+    post+='<input type="text" name="comentar" id="coment'+createdBy+'" class="textcomen">';
     post+='<input type="submit" class="botonComentar" value="Comentar" name="comentarioBoton" onclick="comentar('+createdBy+')">';
     post+='</div>';
     post+='</div>';
@@ -63,7 +63,34 @@ return(post);
 
 function mostrarComents(id){
 
+    const url = "https://backforo.carlini.tech/api/signin.php";
 
+    var requestOptions = {
+        headers: {
+            "Content-Type": "multipart/form-data"
+        },
+    };
+    console.log(formdata);
+    console.log(requestOptions);
+
+
+    axios
+        .post(url, requestOptions)
+        .then((Response) => {
+            if (Response.data.error) {
+                newAviso('no se pudieron cargar los comentarios, por favor intentelo de nuevo');
+                console.log("error", Response.data);
+            } else {
+                uwuposteo= document.getElementsByClassName("uwu-posteo");
+
+
+                
+            }
+        })
+        .catch((e) => {
+            console.error("Error no se detecta respuesta del servidor", e);
+            newAviso("Error no se detecta respuesta del servidor");
+        });
 
 }
 
@@ -78,4 +105,78 @@ function makeComents(user,content){
     coment+='</div>';
     coment+='</div>';
     return coment;
+}
+
+function publicarPost(){
+
+    const url = "https://backforo.carlini.tech/api/addPost.php";
+    newAviso("Enviando datos...");
+
+    content = document.getElementById("content");
+    title = document.getElementById("title");
+
+    var formdata = new FormData();
+    formdata.append("content", content.value);
+    formdata.append("title", title.value);
+
+  var requestOptions = {
+    headers: {
+      "Content-Type": "multipart/form-data"
+    },
+  };
+  console.log(formdata);
+  console.log(requestOptions);
+
+  
+    axios
+      .post(url, formdata, requestOptions)
+      .then((Response) => {
+        if (Response.data.error) {
+          newAviso('Algo ha fallado, controle los datos e inténtelo de nuevo');
+          console.log("error", Response.data);
+        } else {
+            newAviso('Se ha publicado');
+        }
+      })
+      .catch((e) => {
+        console.error("Error no se detecta respuesta del servidor", e);
+        newAviso("Error no se detecta respuesta del servidor");
+      });
+}
+
+
+function comentar(id){
+
+    const url = "https://backforo.carlini.tech/api/addComent.php";
+    newAviso("Enviando datos...");
+
+    content = document.getElementById("content"+id);
+    
+
+    var formdata = new FormData();
+    formdata.append("coment", content.value);
+
+  var requestOptions = {
+    headers: {
+      "Content-Type": "multipart/form-data"
+    },
+  };
+  console.log(formdata);
+  console.log(requestOptions);
+
+  
+    axios
+      .post(url, formdata, requestOptions)
+      .then((Response) => {
+        if (Response.data.error) {
+          newAviso('Algo ha fallado, controle los datos e inténtelo de nuevo');
+          console.log("error", Response.data);
+        } else {
+            newAviso('Se ha publicado');
+        }
+      })
+      .catch((e) => {
+        console.error("Error no se detecta respuesta del servidor", e);
+        newAviso("Error no se detecta respuesta del servidor");
+      });
 }
